@@ -6,7 +6,7 @@
     use Application\Session\Session;
     use Application\Register\Register;
 
-    $reCAPTCHA = new reCAPTCHA('6Ld0QpIUAAAAAEwPDMJtjy13aig64KZ28W3X-Cw0', '6Ld0QpIUAAAAAAnP5S30ikJEk3Pnc6EIX0TpFREQ');
+    $reCAPTCHA = new reCAPTCHA('', '');
     echo $reCAPTCHA->getScript();
 
     Session::SessionCreate();
