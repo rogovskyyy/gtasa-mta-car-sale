@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Boulevard-Saint-Denis-Light';
+    src: url(../font/Boulevard-Saint-Denis-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Hairline';
+    src: url(../font/Lato-Hairline.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url(../font/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(../font/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(../font/LemonMilk.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LemonMilkbold';
+    src: url(../font/LemonMilkbold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LemonMilklight';
+    src: url(../font/LemonMilklight.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(../font/OpenSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(../font/OpenSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(../font/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url(../font/OpenSans-SemiBold.ttf) format('truetype');
+}
+
+
+
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    cursor: default;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+ul,
+li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+*/
+
+.register, .new-ad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2566e0;
+}
+
+.menu{
+    height: 60px;
+    width: 100%;
+    background: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button{
+    margin: 10px;
+}
+
+.button:hover{
+    background: #555;
+}
+
+.selects{
+    padding: 150px 0 50px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.ad-img{
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.ad-container{
+    width: 400px;
+    height: 140px;
+    background: #ccc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ad-container:last-of-type{
+    width: 200px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ad-title{
+    font-size: 30px;
+}
+
+.ad-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.ad-info-box{
+    border: 2px solid #0080ff;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 2px;
+    margin: 0 2px;
+}
+
+.ad-price{
+    font-size: 25px;
+}
+
+.ad-buy, .ad-close{ 
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #108614;
+}
+
+.ad-buy:hover, .ad-close:hover{
+    background-color: #4cd01c;
+}
+
+.register-panel, .login-panel, .ad-panel-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-choice{
+    display: flex;
+}
+
+.profile-container{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.nickname{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.ads-title{
+    font-size: 25px;
+    margin: 50px 0 30px 0;
+}
